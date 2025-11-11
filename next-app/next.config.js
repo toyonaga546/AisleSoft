@@ -6,19 +6,7 @@ const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
-  async rewrites() {
-    return [
-      // Support legacy .html links used by the Vite-generated site
-      {
-        source: '/careers.html',
-        destination: '/careers',
-      },
-      {
-        source: '/privacy.html',
-        destination: '/privacy',
-      },
-    ];
-  },
+  // Legacy .html rewrites removed — site now serves Next.js routes directly.
   webpack: (config, { defaultLoaders }) => {
     // Allow importing files from the repository's root `src` directory.
     // Add aliases so `@/...` resolves to the root src, matching tsconfig paths,

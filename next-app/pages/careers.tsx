@@ -19,20 +19,8 @@ const CareersPage: NextPage = () => {
         <div className="max-w-screen-xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <Link href="/" legacyBehavior>
-                <a
-                  aria-label="トップページへ"
-                  className="inline-block"
-                  onClick={() => {
-                    try {
-                      if (typeof window !== 'undefined' && window.location.pathname === '/') {
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                      }
-                    } catch (err) {}
-                  }}
-                >
-                  <Logo white />
-                </a>
+              <Link href="/" className="inline-block" aria-label="トップページへ">
+                <Logo white />
               </Link>
             </div>
 

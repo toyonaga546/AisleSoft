@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/privacy": "pages/privacy.js",
-  "/": "pages/index.js",
-  "/careers": "pages/careers.js"
-}
+{"/_app":"pages/_app.js","/careers":"pages/careers.html","/":"pages/index.html","/dev-iframe":"pages/dev-iframe.html","/privacy":"pages/privacy.html","/_error":"pages/_error.js","/_document":"pages/_document.js","/404":"pages/404.html"}

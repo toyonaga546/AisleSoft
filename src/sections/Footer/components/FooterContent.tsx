@@ -24,8 +24,8 @@ export const FooterContent = () => {
           variant="links"
           links={[
             { text: "お問い合わせ", href: "/#contact", hoverUnderline: true },
-            { text: "プライバシーポリシー", href: "/privacy.html", hoverUnderline: true },
-            { text: "人材募集", href: "/careers.html", hoverUnderline: true },
+            { text: "プライバシーポリシー", href: "/privacy", hoverUnderline: true },
+            { text: "人材募集", href: "/careers", hoverUnderline: true },
           ]}
         />
       </div>
