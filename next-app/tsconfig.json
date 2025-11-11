@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["../src/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "../node_modules/@types"],
     "lib": [
       "dom",
       "dom.iterable",
