@@ -10,21 +10,7 @@ export const HeaderContainer = () => {
       <div className="items-center box-border caret-transparent flex justify-between outline-[oklab(0.708_0_0_/_0.5)]">
         <div className="items-center box-border caret-transparent flex outline-[oklab(0.708_0_0_/_0.5)]">
           <Link href="/" legacyBehavior>
-            <a
-              aria-label="トップページへ"
-              className="inline-block"
-              onClick={() => {
-                try {
-                  if (typeof window !== 'undefined' && window.location.pathname === '/') {
-                    // already on the home page — smoothly scroll to top
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                    // allow default Link handling; no navigation needed
-                  }
-                } catch (err) {
-                  // ignore
-                }
-              }}
-            >
+            <a aria-label="トップページへ" className="inline-block">
               <Logo white />
             </a>
           </Link>
