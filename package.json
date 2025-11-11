@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "vercel-build": "cd next-app && npm ci && NEXT_BUILD_DIR=../.next npm run build"
+    "vercel-build": "cd next-app && npm ci && npm run build"
   },
   "dependencies": {
     "lucide-react": "^0.453.0",
