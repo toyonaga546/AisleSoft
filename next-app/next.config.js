@@ -6,6 +6,13 @@ const path = require('path');
 
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      { source: '/index.html', destination: '/', permanent: true },
+      { source: '/privacy.html', destination: '/privacy', permanent: true },
+      { source: '/careers.html', destination: '/careers', permanent: true }
+    ];
+  },
   // Legacy .html rewrites removed — site now serves Next.js routes directly.
   webpack: (config, { defaultLoaders }) => {
     // Allow importing files from the repository's root `src` directory.

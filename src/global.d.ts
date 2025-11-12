@@ -10,6 +10,14 @@ declare module 'react' {
   const React: any;
   export default React;
   export function createElement(...args: any[]): any;
+  export function useEffect(effect: () => any, deps?: any[]): void;
+  export function useLayoutEffect(effect: () => any, deps?: any[]): void;
+  export function useMemo<T>(fn: () => T, deps?: any[]): T;
+  export function useCallback<T extends (...args: any[]) => any>(fn: T, deps?: any[]): T;
+  export function useRef<T>(initial?: T): { current: T | null };
+  export function useState<T>(initial?: T): [T, (v: T | ((prev: T) => T)) => void];
+  export const Fragment: any;
+  export type ReactNode = any;
 }
 
 declare module 'react-dom/client' {
