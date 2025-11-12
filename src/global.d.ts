@@ -9,9 +9,7 @@ declare module 'next/link' {
 declare module 'react' {
   const React: any;
   export default React;
-  export const Fragment: any;
   export function createElement(...args: any[]): any;
-  export type PropsWithChildren<T> = T & { children?: any };
 }
 
 declare module 'react-dom/client' {
