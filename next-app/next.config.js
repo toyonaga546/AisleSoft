@@ -8,12 +8,10 @@ const nextConfig = {
   reactStrictMode: true,
   async redirects() {
     return [
-      { source: '/index.html', destination: '/', permanent: true },
-      { source: '/privacy.html', destination: '/privacy', permanent: true },
-      { source: '/careers.html', destination: '/careers', permanent: true }
+      // legacy redirects removed — serving Next routes directly
     ];
   },
-  // Legacy .html rewrites removed — site now serves Next.js routes directly.
+  // Note: legacy .html rewrites were removed per repository consolidation.
   webpack: (config, { defaultLoaders }) => {
     // Allow importing files from the repository's root `src` directory.
     // Add aliases so `@/...` resolves to the root src, matching tsconfig paths,
