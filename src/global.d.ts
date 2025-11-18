@@ -1,11 +1,6 @@
 // Local ambient declarations for editor/TS server when editing files under src/
 declare module '@/*';
 
-declare module 'next/link' {
-  const Link: any;
-  export default Link;
-}
-
 declare module 'react' {
   const React: any;
   export default React;
@@ -32,4 +27,4 @@ declare module 'react/jsx-runtime' {
   export const Fragment: any;
 }
 
-declare module 'next/*';
+// removed ambient 'next/*' declarations when removing Next.js from the repo

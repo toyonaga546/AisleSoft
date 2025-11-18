@@ -1,17 +1,8 @@
-import React from 'react';
-import { NextPage } from 'next';
-import { Main } from '@/components/Main';
-import { Header } from '@/sections/Header';
-import { Footer } from '@/sections/Footer';
-
-const Home: NextPage = () => {
+export default function Home() {
   return (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <main>
+      <h1>Next.js removed — placeholder page</h1>
+      <p>This repository has been converted; the Next.js app was removed.</p>
+    </main>
   );
-};
-
-export default Home;
+}
